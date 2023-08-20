@@ -28,7 +28,7 @@ const Button = ({children, onHref, size, colorBg, styleBg, borderButton}: Button
   } else if(colorBg === 'white' && styleBg === 'solid'){
     bgClass = 'bg-white text-dark';
   } else if(colorBg === 'white' && styleBg === 'light'){
-    bgClass = 'bg-white/10 text-dark'
+    bgClass = 'bg-white/10 text-white'
   } else if(colorBg === 'white' && styleBg === 'transparent'){
     bgClass = 'bg-transparent text-white border border-white'
   }
