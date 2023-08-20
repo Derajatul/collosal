@@ -40,7 +40,7 @@ const Button = ({children, onHref, size, colorBg, styleBg, borderButton}: Button
     borderClass = 'rounded-full';
   }
 
-  const buttonClass = `${sizeClass} ${bgClass} ${borderClass} inline-block flex items-center justify-center`;
+  const buttonClass = `${sizeClass} ${bgClass} ${borderClass} inline-block flex items-center justify-center no-underline`;
   
   return(
     <>

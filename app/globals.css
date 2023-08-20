@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind components;
+@tailwind utilities;
+*{
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  font-family: 'Noto Sans', sans-serif;
+}
+body{
+  background-color: #0B0B22;
+  padding: 0 10% 0 10%;
+}
