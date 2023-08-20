@@ -1,0 +1,6 @@
+const Button = ({children}) => {
+  return(
+    <h1>{children}</h1>
+  )
+}
+export default Button
