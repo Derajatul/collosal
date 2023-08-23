@@ -42,18 +42,36 @@ export default function Home() {
         </section>
 
         {/* How we work section */}
-        <section className="section flex flex-wrap items-center justify-center">
-          <Image 
-            src="/howWeWork/illustration.svg" 
-            width={550} 
-            height={500} 
-            style={{ maxWidth: '100%', height: 'auto'}} 
-            alt=''/>
+        <section className="section flex flex-wrap items-center justify-center flex-row-reverse">
           <div className="w-[502px] text-left">
             <h3 className="green_heading">HOW WE WORK?</h3>
             <h2 className="heading_2">Everything is well planned, well designed and developed wholeheartedly</h2>
             <p className="paragraph">Careful planning makes us confident, developed with best practices so that the project can be maintained. We always test projects before they are shipped.</p>
           </div>
+          <Image 
+            src="/howWeWork/illustration.svg" 
+            width={550} 
+            height={500} 
+            style={{ maxWidth: '100%', height: 'auto'}} 
+            alt=''
+          />
+        </section>
+
+        {/*Team section  */}
+        <section className="section flex items-center justify-center flex-wrap">
+          <div className="text-left w-[415px]">
+            <h3 className="green_heading">OUR TEAM</h3>
+            <h2 className="heading_2">We're a team of designers, engineers and analysts</h2>
+            <p className="paragraph">Our team consists of many creative people. We are committed to maintaining quality work as well as speed. These creative people work together to create maximum work results.</p>
+            <Button onHref="https://example.com" colorBg="white" styleBg="light" size="normal" borderButton="square">See Our Teams</Button>
+          </div>
+          <Image 
+            src="/team/illustration.svg" 
+            width={605} 
+            height={549} 
+            style={{ maxWidth: "100%", height: "auto" }}
+            alt="" 
+          />
         </section>
       </main>
     </>
