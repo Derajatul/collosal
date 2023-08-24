@@ -42,7 +42,7 @@ const Button = ({children, onHref, size, color, style, border }: ButtonProps): J
     borderClass = 'rounded-full';
   }
 
-  const buttonClass = `${sizeClass} ${bgClass} ${borderClass} inline-block flex items-center justify-center no-underline`;
+  const buttonClass = `${sizeClass} ${bgClass} ${borderClass} inline-block flex items-center justify-center no-underline hover:opacity-75`;
   
   return(
     <>
