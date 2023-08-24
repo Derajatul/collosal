@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
+/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
 *{
@@ -9,5 +10,51 @@
 }
 body{
   background-color: #0B0B22;
-  padding: 0 10% 0 10%;
+  padding: 0 8% 0 8%;
+
+  
 }
+.eclipse {
+  @apply absolute blur-[80px] shrink-0 rounded-full;
+  -webkit-filter: blur(80px);
+}
+
+.section{
+  @apply min-h-screen w-full;
+}
+
+.line{
+  @apply w-full h-px bg-[#FFFFFF1A]
+}
+
+.paragraph{
+  @apply text-muted font-medium leading-8;
+}
+
+.heading_1{
+  @apply text-white text-4xl font-bold leading-[54px];
+}
+.heading_2{
+  @apply text-white text-3xl font-bold leading-[48px];
+}
+.green_heading{
+  @apply text-green text-base;
+}
+.heading_4{
+  @apply text-white text-base font-bold leading-[34px];
+}
+.heading_5{
+  @apply text-white font-medium my-1;
+}
+
+/* .eclipse{
+  position: absolute;
+  -webkit-filter: blur(87.5px);
+  filter: blur(87.5px);
+  width: 784.292px;
+  height: 770.179px;
+  transform: rotate(-14.67deg);
+  flex-shrink: 0;
+  border-radius: 784.292px;
+  background: rgba(252, 160, 22, 0.1);
+} */
