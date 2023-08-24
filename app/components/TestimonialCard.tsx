@@ -9,7 +9,7 @@ type TestimonialCard = {
 
 const TestimonialCard = ({avatar,name,company,testimonial}: TestimonialCard): JSX.Element => {
   return(
-    <div className="w-[328px] h-[500px] bg-[#FFFFFF0D] flex items-center flex-col px-[47px] hover:border-primary hover:border-solid ">
+    <div className="w-full sm:w-[328px] h-auto sm:h-[500px] bg-[#FFFFFF0D] flex items-center flex-col px-[47px] hover:border-primary hover:border-solid ">
       <div className="w-[90px] h-[90px] mt-[61px] relative">
         <Image src={`${avatar}`} width={90} height={90}  alt='' />
         <div className="absolute end-0 -bottom-2">

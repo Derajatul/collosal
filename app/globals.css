@@ -11,8 +11,8 @@
 body{
   background-color: #0B0B22;
   padding: 0 8% 0 8%;
-
   
+  margin: 0;
 }
 .eclipse {
   @apply absolute blur-[80px] shrink-0 rounded-full;
@@ -20,7 +20,7 @@ body{
 }
 
 .section{
-  @apply min-h-screen w-full;
+  @apply min-h-screen w-full py-10 sm:py-0;
 }
 
 .line{
@@ -28,7 +28,7 @@ body{
 }
 
 .paragraph{
-  @apply text-muted font-medium leading-8;
+  @apply text-muted font-medium leading-8 no-underline;
 }
 
 .heading_1{
@@ -47,14 +47,11 @@ body{
   @apply text-white font-medium my-1;
 }
 
-/* .eclipse{
-  position: absolute;
-  -webkit-filter: blur(87.5px);
-  filter: blur(87.5px);
-  width: 784.292px;
-  height: 770.179px;
-  transform: rotate(-14.67deg);
-  flex-shrink: 0;
-  border-radius: 784.292px;
-  background: rgba(252, 160, 22, 0.1);
+/* @media (min-width: 1280px) {
+  body{
+    background-image:url('/background/home.svg');
+    backdrop-filter: blur(64px);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 } */
