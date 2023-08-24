@@ -3,6 +3,7 @@ import Image from 'next/image'
 import FeatureCard from './components/FeatureCard'
 import ProjectCard from './components/ProjectCard'
 import PricingCard from './components/PricingCard'
+import TestimonialCard from './components/TestimonialCard'
 
 export default function Home() {
   return (
@@ -117,14 +118,14 @@ export default function Home() {
         </section>
 
         {/* Pricing section */}
-        <section className="section">
-          <div className="w-full flex justify-center items-center bg-highlight px-5 sm:px-[20px] pt-[87px] pb-[145px] rounded-[30px] flex-col">
+        <section className="section ">
+          <div className="w-full flex justify-center items-center bg-highlight px-5 sm:px-[20px] pt-[87px] pb-[145px]  rounded-[30px] flex-col">
             <div className = "w-full sm:w-[507px]">
               <h3 className="green_heading">GET STARTED</h3>     
               <h2 className="heading_2 ">What do you need? Choose a service that can help you</h2>
             </div>
             
-            <div className="flex flex-wrap items-center justify-center gap-2">
+            <div className="flex flex-wrap items-center justify-center gap-5 ">
               <PricingCard 
                 name="UI Design" 
                 price="1200$" 
@@ -142,8 +143,21 @@ export default function Home() {
                 background="bg-[#792366]" />
             </div>
           </div>
+        </section>
 
-         
+        {/* Testimonial section */}
+        <section className="section flex justify-center items-center flex-col">
+          <div className="w-full sm:w-[507px] mt-[122px]">
+            <h3 className="green_heading">TESTIMONIAL</h3>
+            <h2 className="heading_2">What do our clients say that we never let down?</h2>
+          </div>
+
+          <div className="flex flex-wrap justify-center items-center gap-5 pb-[189px] pt-[100px]">
+            <TestimonialCard avatar='/avatar/1.svg' name="Courtney Henry" company="Biffco Enterprises Ltd." testimonial="Very easy to use. I made back the purchase price in just 48 hours! It's great. It's is both attractive and highly adaptable." />
+            <TestimonialCard avatar='/avatar/2.svg' name="Esther Howard" company="Abstergo Ltd." testimonial="Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business." />
+            <TestimonialCard avatar='/avatar/3.svg' name="Ronald Richards" company="Barone LLC." testimonial="I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking." />
+          </div>
+          
         </section>
       </main>
     </>
