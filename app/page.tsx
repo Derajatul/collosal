@@ -2,7 +2,7 @@ import Button from './components/Button'
 import Image from 'next/image'
 import FeatureCard from './components/FeatureCard'
 import ProjectCard from './components/ProjectCard'
-import Eclipse from './components/Eclipse'
+import PricingCard from './components/PricingCard'
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
             <p className="paragraph">We are committed to not making clients wait. We will deliver the work as quickly as possible. Even on the same day. Even so, we do not reduce the quality of our work.</p>
           </div>
   
-          <div className="mt-5 sm:flex sm:gap-5">
+          <div className="mt-8 sm:flex sm:gap-5">
             <Button 
               onHref="https://example.com" 
               color="primary"
@@ -31,7 +31,9 @@ export default function Home() {
               color="white" 
               style="light" 
               size="normal" 
-              border="square">Learn More</Button>
+              border="square">
+                Learn More
+            </Button>
           </div>
         </section>
   
@@ -43,7 +45,7 @@ export default function Home() {
             <FeatureCard icon="/featureCard/box.svg" title="Ship" description="After the work is complete, we will send the project and all its assets to you." />
           </div>
           
-          <div className="line mt-14 mb-5"></div>
+          <div className="line mt-[60px] mb-8"></div>
           <div className="flex gap-10 justify-center items-center flex-wrap">
             <Image src='/company/github.svg' width={119} height={33} alt='' />
             <Image src='/company/forbes.svg'  width={119} height={32} alt=''/>
@@ -51,7 +53,7 @@ export default function Home() {
             <Image src='/company/microsoft.svg'  width={119} height={25} alt=''/>
             <Image src='/company/facebook.svg'  width={119} height={23} alt=''/>
           </div>
-          <div className="line mb-14 mt-5"></div>
+          <div className="line mb-[60px] mt-8"></div>
           
         </section>
 
@@ -97,12 +99,12 @@ export default function Home() {
 
         {/* Projects section */}
         <section className="section flex items-center justify-center flex-col">
-          <div className="line"></div>
+          <div className="line mb-[118px]"></div>
           <div className="w-full sm:w-[500px]">
             <h3 className="green_heading">PROJECTS</h3>
             <h2 className="heading_2">We have completed many amazing projects that you will not believe</h2>
           </div>
-          <div className="w-full sm:flex sm:flex-wrap sm:gap-5 sm:items-center sm:justify-center">
+          <div className="w-full sm:flex sm:flex-wrap sm:gap-5 sm:items-center sm:justify-center mt-[65px] mb-[110px]">
             <ProjectCard 
             title="The Mobile App Landing Page" 
             description="A landing page for mobile app" 
@@ -112,7 +114,36 @@ export default function Home() {
             description="A landing page for desktop app" 
             type="desktop" />
           </div>
-          
+        </section>
+
+        {/* Pricing section */}
+        <section className="section">
+          <div className="w-full flex justify-center items-center bg-highlight px-5 sm:px-[20px] pt-[87px] pb-[145px] rounded-[30px] flex-col">
+            <div className = "w-full sm:w-[507px]">
+              <h3 className="green_heading">GET STARTED</h3>     
+              <h2 className="heading_2 ">What do you need? Choose a service that can help you</h2>
+            </div>
+            
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <PricingCard 
+                name="UI Design" 
+                price="1200$" 
+                features={["10 design pages","Well-documented","4 revision","100$/additional page"]} 
+                background="bg-[#3f2379]" />
+              <PricingCard 
+                name="Development" 
+                price="5000$" 
+                features={["Web & Mobile","Well-documented","8 revision","1000$/additional page"]} 
+                background="bg-[#233679]" />
+              <PricingCard 
+                name="Maintenance" 
+                price="3000$" 
+                features={["Daily backup","3 hours of maintenance","Including fixing","100$/additional page"]}
+                background="bg-[#792366]" />
+            </div>
+          </div>
+
+         
         </section>
       </main>
     </>
