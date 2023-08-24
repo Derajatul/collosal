@@ -15,8 +15,9 @@ module.exports = {
       'white': '#ffffff',
       'transparent': 'transparent',
       'muted': '#FFFFFF99',
-      'green': '#16FCD2'
-      
+      'green': '#16FCD2',
+      'cardDark': '#161629',
+      'highlight' : '#221048'
     },
   },
   plugins: [],
