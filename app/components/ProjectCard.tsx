@@ -2,15 +2,18 @@ import Button from './Button'
 
 type ProjectCard = {
   title: "string",
-  description: "string"
+  description: "string",
+  type: "string"
 }
 
-const ProjectCard = ({title, description,type}:ProjectCard) => {
+const ProjectCard = ({title, description,type}:ProjectCard): JSX.Element => {
   let width = ''
   if(type === 'mobile'){
     width = "w-[194px]"
   } else if(type === 'desktop'){
     width = "w-[300px]"
+  } else if(type === 'full'){
+    width = "w-full"
   }
   return (
     <div className="w-full sm:w-[502px] h-[636px] flex flex-col justify-center items-center my-10 sm:my-0">
@@ -20,7 +23,7 @@ const ProjectCard = ({title, description,type}:ProjectCard) => {
         <div className={`${width} h-[256px] rounded-t-[20px] mt-[65px] bg-[#212136] `}></div>
       </div>
       <h4 className="heading_4">{title}</h4>
-      <p className="paragraph">{description}</p>
+      <p className="paragraph mb-[30px]">{description}</p>
       <Button 
         onHref="https://example.com/"
         color="white" 

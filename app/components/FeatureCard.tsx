@@ -6,7 +6,7 @@ type FeatureCard = {
   description: string
 }
 
-const FeatureCard = ({icon, title, description}: FeatureCard) => {
+const FeatureCard = ({icon, title, description}: FeatureCard): JSX.Element => {
   return(
     <div className="w-full my-5 sm:w-[328px] h-[276px] bg-[#FFFFFF0D] p-10 text-left rounded">
       <div className="h-[50px] w-[50px] bg-[#FFFFFF08] flex justify-center items-center">

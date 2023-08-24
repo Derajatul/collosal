@@ -4,18 +4,20 @@ import Link from 'next/link'
 type ButtonProps = {
   children: ReactNode;
   onHref: string;
-  size: 'normal' | 'small';
+  size: 'normal' | 'small' | 'full';
   color: 'primary' | 'white';
   style: 'solid' | 'light' | 'transparent';
   border: 'square' | 'pill';
 };
 
-const Button = ({children, onHref, size, color, style, border }: ButtonProps) => {
+const Button = ({children, onHref, size, color, style, border }: ButtonProps): JSX.Element => {
    let sizeClass = '';
   if(size === 'normal'){
     sizeClass = 'w-[164px] h-[52px]';
   } else if(size === 'small'){
     sizeClass = 'w-[112px] h-[39px]';
+  } else if(size === 'full'){
+    sizeClass = 'w-full h-[52px]'
   }
 
   let bgClass = '';

@@ -6,7 +6,7 @@ type Eclipse = {
   height: string,
 }
 
-const Eclipse = ({bg, top, left, width, height}: Eclipse) => {
+const Eclipse = ({bg, top, left, width, height}: Eclipse): JSX.Element => {
   const eclipseClass = `eclipse ${bg} ${width} ${height} ${left} ${top}`
   return(
     <div className={eclipseClass}>
