@@ -8,7 +8,9 @@ import TestimonialCard from './components/TestimonialCard'
 export default function Home() {
   return (
     <>
+      
       <main className='flex items-center justify-center text-center flex-col'>
+        
         {/* Hero section */}
         <section className="section flex justify-center items-center flex-col">
           <div className='max-w-[601px]'>
@@ -17,7 +19,7 @@ export default function Home() {
             <p className="paragraph">We are committed to not making clients wait. We will deliver the work as quickly as possible. Even on the same day. Even so, we do not reduce the quality of our work.</p>
           </div>
   
-          <div className="mt-8 sm:flex sm:gap-5">
+          <div className="flex flex-wrap mt-8 gap-5 items-center justify-center">
             <Button 
               onHref="https://example.com" 
               color="primary"
@@ -75,7 +77,7 @@ export default function Home() {
         </section>
 
         {/*Team section  */}
-        <section className="section flex items-center justify-center flex-wrap">
+        <section className="section flex items-center justify-center flex-wrap gap-5">
           <div className="text-left w-[415px]">
             <h3 className="green_heading">OUR TEAM</h3>
             <h2 className="heading_2">We're a team of designers, engineers and analysts</h2>
