@@ -8,7 +8,7 @@ const Footer = () => {
         <h2 className="heading_2 sm:w-[589px] w-full">We've prepared everything, it's time for you to tell the problem</h2>
         <div className="flex gap-5 flex-wrap items-center justify-center">
           <Button
-            onHref="https://example.com/"
+            onHref="/quote"
             style="solid"
             color="primary"
             border="square"
