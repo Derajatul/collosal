@@ -1,9 +1,9 @@
 import Button from './Button'
 
 type ProjectCard = {
-  title: "string",
-  description: "string",
-  type: "string"
+  title: string,
+  description: string,
+  type: string
 }
 
 const ProjectCard = ({title, description,type}:ProjectCard): JSX.Element => {
@@ -25,7 +25,7 @@ const ProjectCard = ({title, description,type}:ProjectCard): JSX.Element => {
       <h4 className="heading_4">{title}</h4>
       <p className="paragraph mb-[30px]">{description}</p>
       <Button 
-        onHref="https://example.com/"
+        onHref="projects/detail"
         color="white" 
         style="transparent" 
         size="small"
