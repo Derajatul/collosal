@@ -95,10 +95,7 @@ const Navbar = () => {
           </Link>
         )
       })}
-        {/* <Link href="/services" className="paragraph hover:text-white ">Services</Link>
-        <Link href="/work" className="paragraph hover:text-white">How We Work</Link>
-        <Link href="/projects" className="paragraph hover:text-white">Projects</Link>
-        <Link href="/about" className="paragraph hover:text-white">About</Link> */}
+
       </div>
 
       <Button 
@@ -110,32 +107,6 @@ const Navbar = () => {
         >Contact
       </Button>
     </nav>
-      
-    {/* <nav className="hidden h-[80px] absolute top-0 lg:flex justify-between items-center max-w-6xl w-full px-[20px]">
-      <Link href='/' className="flex items-center justify-center gap-5 no-underline">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M18.9221 5.77922V3C18.9221 1.89543 18.0266 1 16.9221 1H3C1.89543 1 1 1.89543 1 3V16.9221C1 18.0266 1.89543 18.9221 3 18.9221H6.22727" stroke="white" stroke-width="2"/>
-          <rect x="7.07812" y="6.48052" width="15.9221" height="15.9221" rx="1" stroke="white" stroke-width="2"/>
-        </svg>
-        <h2 className="text-white font-bold text-2xl">Collosal</h2>
-      </Link>
-
-      <div className="flex items-center justify-center gap-10">
-        <Link href="/services" className="paragraph hover:text-white">Services</Link>
-        <Link href="#" className="paragraph hover:text-white">How We Work</Link>
-        <Link href="/projects" className="paragraph hover:text-white">Projects</Link>
-        <Link href="#" className="paragraph hover:text-white">About</Link>
-      </div>
-
-      <Button 
-        onHref="/contact"
-        style="light"
-        color="white"
-        border="square"
-        size="small"
-        >Contact
-      </Button>
-    </nav> */}
     </>
   )
 }

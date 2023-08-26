@@ -80,7 +80,7 @@ export default function Home() {
         <section className="section flex items-center justify-center flex-wrap gap-5">
           <div className="text-left w-[415px]">
             <h3 className="green_heading">OUR TEAM</h3>
-            <h2 className="heading_2">We're a team of designers, engineers and analysts</h2>
+            <h2 className="heading_2">We&apos;re a team of designers, engineers and analysts</h2>
             <p className="paragraph">Our team consists of many creative people. We are committed to maintaining quality work as well as speed. These creative people work together to create maximum work results.</p>
             <Button 
               onHref="https://example.com" 
@@ -155,9 +155,9 @@ export default function Home() {
           </div>
           
           <div className="flex flex-wrap justify-center items-center gap-5 pb-[189px] pt-[100px]">
-            <TestimonialCard avatar='/avatar/1.svg' name="Courtney Henry" company="Biffco Enterprises Ltd." testimonial="Very easy to use. I made back the purchase price in just 48 hours! It's great. It's is both attractive and highly adaptable." />
-            <TestimonialCard avatar='/avatar/2.svg' name="Esther Howard" company="Abstergo Ltd." testimonial="Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business." />
-            <TestimonialCard avatar='/avatar/3.svg' name="Ronald Richards" company="Barone LLC." testimonial="I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking." />
+            <TestimonialCard avatar='/avatar/1.svg' name="Courtney Henry" company="Biffco Enterprises Ltd." testimonial="Very easy to use. I made back the purchase price in just 48 hours! It&apos;s great. It&apos;s is both attractive and highly adaptable." />
+            <TestimonialCard avatar='/avatar/2.svg' name="Esther Howard" company="Abstergo Ltd." testimonial="Your company is truly upstanding and is behind its product 100%. It&apos;s the perfect solution for our business. It has really helped our business." />
+            <TestimonialCard avatar='/avatar/3.svg' name="Ronald Richards" company="Barone LLC." testimonial="I am really satisfied with it. I&apos;m good to go. It really saves me time and effort. It&apos;s is exactly what our business has been lacking." />
           </div>
         </section>
 

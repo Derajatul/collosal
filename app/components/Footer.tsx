@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="max-w-6xl w-full">
       <div className="line mb-[46px]"></div>
       <div className="flex justify-between items-center flex-wrap">
-        <h2 className="heading_2 sm:w-[589px] w-full">We've prepared everything, it's time for you to tell the problem</h2>
+        <h2 className="heading_2 sm:w-[589px] w-full">We&apos;ve prepared everything, it&apos;s time for you to tell the problem</h2>
         <div className="flex gap-5 flex-wrap items-center justify-center">
           <Button
             onHref="/quote"
