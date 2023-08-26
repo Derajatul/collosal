@@ -8,23 +8,38 @@
   /* border: 1px solid red; */
   font-family: 'Noto Sans', sans-serif;
 }
+
 body{
   background-color: #0B0B22;
-  padding: 0 8% 0 8%;
-  
+  padding:0 20px 0 20px;
+  position: relative;
   margin: 0;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  /* background-image: url('/background/background.svg');
+  background-repeat: no-repeat;
+  backdrop-filter: blur(64px); */
 }
 .eclipse {
   @apply absolute blur-[80px] shrink-0 rounded-full;
   -webkit-filter: blur(80px);
 }
 
+.container{
+  @apply max-w-6xl flex items-center justify-center text-center flex-col
+}
 .section{
   @apply min-h-screen w-full py-10 sm:py-0;
 }
 
 .line{
   @apply w-full h-px bg-[#FFFFFF1A]
+}
+
+.inputText{
+  @apply w-full sm:w-[160px] h-[40px] rounded border-[#FFFFFF1A] border-solid bg-transparent text-base text-white focus:border-[#FFFFFF1A] focus:border-solid;
 }
 
 .paragraph{
@@ -37,6 +52,7 @@ body{
 .heading_2{
   @apply text-white text-3xl font-bold leading-[48px];
 }
+
 .green_heading{
   @apply text-green text-base;
 }
@@ -46,6 +62,7 @@ body{
 .heading_5{
   @apply text-white font-medium my-1;
 }
+
 
 /* @media (min-width: 1280px) {
   body{
