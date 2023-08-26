@@ -2,8 +2,8 @@ import ProjectCard from '../../components/ProjectCard'
 
 const Detail = () => {
   return(
-    <main className='flex items-center justify-center text-center flex-col'>
-      <section className="w-full min-h-[50vh] flex items-center justify-center">
+    <main className='container'>
+      <section className="w-full min-h-[50vh] flex items-center justify-center mt-20">
         <div className="w-full sm:w-[501px] ">
           <h3 className="green_heading">PROJECT DETAIL</h3>
           <h2 className="heading_2">The Desktop App Landing Page</h2>

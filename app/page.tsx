@@ -9,11 +9,11 @@ export default function Home() {
   return (
     <>
       
-      <main className='flex items-center justify-center text-center flex-col'>
+      <main className="container">
         
         {/* Hero section */}
         <section className="section flex justify-center items-center flex-col">
-          <div className='max-w-[601px]'>
+          <div className='max-w-[601px] mt-20'>
             <h3 className="green_heading">CLIENT-DEVELOPMENT DRIVEN</h3>
             <h1 className="heading_1">We Design, We Develop. We Ship. In The Same Day.</h1>
             <p className="paragraph">We are committed to not making clients wait. We will deliver the work as quickly as possible. Even on the same day. Even so, we do not reduce the quality of our work.</p>
@@ -21,7 +21,7 @@ export default function Home() {
   
           <div className="flex flex-wrap mt-8 gap-5 items-center justify-center">
             <Button 
-              onHref="https://example.com" 
+              onHref="/quote" 
               color="primary"
               style="solid" 
               size="normal" 
@@ -30,7 +30,7 @@ export default function Home() {
             </Button>
             
             <Button 
-              onHref="https://example.com" 
+              onHref="/services" 
               color="white" 
               style="light" 
               size="normal" 
@@ -153,14 +153,14 @@ export default function Home() {
             <h3 className="green_heading">TESTIMONIAL</h3>
             <h2 className="heading_2">What do our clients say that we never let down?</h2>
           </div>
-
+          
           <div className="flex flex-wrap justify-center items-center gap-5 pb-[189px] pt-[100px]">
             <TestimonialCard avatar='/avatar/1.svg' name="Courtney Henry" company="Biffco Enterprises Ltd." testimonial="Very easy to use. I made back the purchase price in just 48 hours! It's great. It's is both attractive and highly adaptable." />
             <TestimonialCard avatar='/avatar/2.svg' name="Esther Howard" company="Abstergo Ltd." testimonial="Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business." />
             <TestimonialCard avatar='/avatar/3.svg' name="Ronald Richards" company="Barone LLC." testimonial="I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking." />
           </div>
-          
         </section>
+
       </main>
     </>
   )
