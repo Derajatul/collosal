@@ -1,6 +1,12 @@
 import Image from 'next/image'
 
-const CardIcon = ({title,description,img}) => {
+type CardIcon = {
+  title: string,
+  description: string,
+  img: string
+}
+
+const CardIcon = ({title,description,img}: CardIcon):JSX.Element => {
   return(
     <div className="w-[241px] h-[141px] p-[22px] bg-[#FFFFFF0D] border-solid border-[#FFFFFF1A]">
       <div className="flex items-center gap-5 h-[35px]">
