@@ -3,7 +3,7 @@ import ProjectCard from '../../components/ProjectCard'
 const Detail = () => {
   return(
     <main className='container'>
-      <section className="w-full min-h-[50vh] flex items-center justify-center mt-20">
+      <section className="w-full min-h-[50vh] flex items-center justify-center">
         <div className="w-full sm:w-[501px] ">
           <h3 className="green_heading">PROJECT DETAIL</h3>
           <h2 className="heading_2">The Desktop App Landing Page</h2>

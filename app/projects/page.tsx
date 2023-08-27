@@ -3,7 +3,7 @@ import ProjectCard from '../components/ProjectCard'
 const Projects = () => {
   return(
     <main className='container'>
-      <section className="min-h-[50vh] flex justify-between w-full items-center flex-wrap mt-20">
+      <section className="min-h-[50vh] flex justify-between w-full items-center flex-wrap">
         <div className="w-[507px] text-left">
           <h3 className="green_heading">PROJECTS</h3>
           <h2 className="heading_2">We have completed many amazing projects that you will not believe</h2>

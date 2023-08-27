@@ -13,13 +13,13 @@ export default function Home() {
         
         {/* Hero section */}
         <section className="section flex justify-center items-center flex-col">
-          <div className='max-w-[601px] mt-20'>
+          <div className='max-w-[601px]'>
             <h3 className="green_heading">CLIENT-DEVELOPMENT DRIVEN</h3>
             <h1 className="heading_1">We Design, We Develop. We Ship. In The Same Day.</h1>
             <p className="paragraph">We are committed to not making clients wait. We will deliver the work as quickly as possible. Even on the same day. Even so, we do not reduce the quality of our work.</p>
           </div>
   
-          <div className="flex flex-wrap mt-8 gap-5 items-center justify-center">
+          <div className="flex flex-wrap mt-8 gap-5 items-center justify-center mb-20">
             <Button 
               onHref="/quote" 
               color="primary"

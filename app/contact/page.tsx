@@ -4,7 +4,7 @@ import Button from '../components/Button'
 const Contact = () => {
   return(
     <main className='container'>
-      <section className="section flex flex-wrap justify-between items-center gap-5 mt-20">
+      <section className="section flex flex-wrap justify-between items-center gap-5">
         <div className="w-full sm:w-[502px] text-left">
           <h3 className="green_heading">CONTACT</h3>
           <h2 className="heading_2">We love receiving messages from you, we are waiting for it.</h2>

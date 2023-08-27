@@ -3,7 +3,7 @@ import Button from '../components/Button'
 const Quote = () => {
   return (
     <main className='container'>
-      <section className="section flex flex-wrap items-center justify-between w-full gap-10 mt-20">
+      <section className="section flex flex-wrap items-center justify-between w-full gap-10">
         <div className="w-[504px] text-left">
           <h3 className="green_heading">SEND QUOTE</h3>
           <h2 className="heading_2">Tell us about your problem and how we can help</h2>
