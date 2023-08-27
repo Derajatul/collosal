@@ -5,7 +5,7 @@ type IconList ={
   img: string
 }
 
-const IconList = ({keyValue,value,img}: IconList):JSX.Element => {
+const IconList = ({keyValue='',value,img}: IconList):JSX.Element => {
   return(
     <div className="flex items-center justify-start flex-wrap gap-5">
       <div className="w-[70px] h-[70px] bg-[#FFFFFF0D] flex items-center justify-center">
