@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Work = () => {
   return(
     <main className="container">
-      <section className="w-full h-[50vh] flex items-center justify-center text-center">
+      <section className="w-full min-h-[50vh] flex items-center justify-center text-center">
         <div className="w-full sm:w-[507px]">
           <h3 className="green_heading">HOW WE WORK</h3>
           <h2 className="heading_2">We have a workflow that allows the job to be delivered well</h2>
