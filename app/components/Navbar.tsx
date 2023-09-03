@@ -7,8 +7,11 @@ import { usePathname } from 'next/navigation'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const toggleNavbar = () => {
+  const handleToggle = () => {
     setIsOpen(!isOpen)
+  }
+  const handleClose = () => {
+    setIsOpen(false)
   }
   const pathname = usePathname()
   const navLinks = [
@@ -50,6 +53,7 @@ const Navbar = () => {
             className={isActive ? '!text-white paragraph hover:text-white py-5 bg-[#0B0B22]' : 'paragraph hover:text-white py-5 bg-[#0B0B22]'}
             href={link.href}
             key={link.name}
+            onClick={handleClose}
           >
             {link.name}
           </Link>
@@ -60,7 +64,7 @@ const Navbar = () => {
        </div>    
       </div>
 
-      <div onClick={toggleNavbar} className="top-0 right-0 md:p-0 p-[20px] absolute h-[80px] flex items-center">
+      <div onClick={handleToggle} className="top-0 right-0 md:p-0 p-[20px] absolute h-[80px] flex items-center">
         <svg
         className="w-6 h-6 text-white"
         fill="none"
